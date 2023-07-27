@@ -1,8 +1,12 @@
 # import library
 import openai
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # configure openai to your account 
-openai.api_key = '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'
+openai.api_key = os.getenv("API_KEY")
 
 def summarize(text):
 	
