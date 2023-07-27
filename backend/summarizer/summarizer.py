@@ -2,7 +2,7 @@
 import openai
 import os
 # configure openai to your account 
-openai.api_key = 'os.getenv("API_KEY")
+openai.api_key = os.getenv("API_KEY")
 
 def summarize(text):
 	
